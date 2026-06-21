@@ -54,7 +54,7 @@ export default function Tour({ src, edit = false }) {
           defaultZoomLvl: 0,
           // 'gyroscope' = tlačidlo na zapnutie ovládania pohybom telefónu (mobil).
           // Na zariadeniach bez senzora sa tlačidlo automaticky skryje.
-          navbar: ['zoom', 'caption', 'gyroscope', 'fullscreen'],
+          navbar: ['zoom', 'gyroscope', 'fullscreen'],
           plugins: [
             MarkersPlugin,
             GyroscopePlugin,

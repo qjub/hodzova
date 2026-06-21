@@ -73,7 +73,8 @@ export function toPsvNode(node, baseUrl) {
   return {
     id: node.id,
     name: node.name,
-    caption: node.name,
+    // caption zámerne nenastavujeme — tooltip nad šípkou by inak vypísal názov 2×
+    // (PSV skladá tooltip z name + caption). Názov miestnosti drží `name`.
     panorama: resolveAsset(baseUrl, node.panorama),
     thumbnail: node.thumbnail ? resolveAsset(baseUrl, node.thumbnail) : undefined,
     sphereCorrection: node.sphereCorrection,
