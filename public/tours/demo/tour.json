@@ -1,0 +1,139 @@
+{
+  "name": "Vzorový byt",
+  "startNodeId": "predsien",
+  "floorplan": {
+    "image": "podorys.png",
+    "rooms": [
+      {
+        "nodeId": "spalna",
+        "x": 0.2444,
+        "y": 0.496,
+        "label": "Spálňa"
+      },
+      {
+        "nodeId": "obyvacka",
+        "x": 0.5174,
+        "y": 0.497,
+        "label": "Obývačka"
+      },
+      {
+        "nodeId": "kuchyna",
+        "x": 0.7465,
+        "y": 0.4133,
+        "label": "Kuchyňa"
+      },
+      {
+        "nodeId": "chodba",
+        "x": 0.9167,
+        "y": 0.3553,
+        "label": "Chodba"
+      },
+      {
+        "nodeId": "predsien",
+        "x": 0.9063,
+        "y": 0.7095,
+        "label": "Predsieň"
+      },
+      {
+        "nodeId": "kupelna",
+        "x": 0.7708,
+        "y": 0.7223,
+        "label": "Kúpeľňa"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "id": "predsien",
+      "name": "Predsieň",
+      "panorama": "predsien.jpg",
+      "links": [
+        {
+          "nodeId": "chodba",
+          "yaw": 4.7086,
+          "pitch": -0.4124
+        },
+        {
+          "nodeId": "kupelna",
+          "yaw": 3.0308,
+          "pitch": -0.4182
+        }
+      ]
+    },
+    {
+      "id": "chodba",
+      "name": "Chodba",
+      "panorama": "chodba.jpg",
+      "links": [
+        {
+          "nodeId": "kuchyna",
+          "yaw": 3.1741,
+          "pitch": -0.5751
+        },
+        {
+          "nodeId": "predsien",
+          "yaw": 1.579,
+          "pitch": -0.378
+        }
+      ]
+    },
+    {
+      "id": "kuchyna",
+      "name": "Kuchyňa",
+      "panorama": "kuchyna.jpg",
+      "links": [
+        {
+          "nodeId": "chodba",
+          "yaw": 6.2794,
+          "pitch": -0.4568
+        },
+        {
+          "nodeId": "obyvacka",
+          "yaw": 3.0911,
+          "pitch": -0.3879
+        }
+      ]
+    },
+    {
+      "id": "obyvacka",
+      "name": "Obývačka",
+      "panorama": "obyvacka.jpg",
+      "links": [
+        {
+          "nodeId": "kuchyna",
+          "yaw": 6.1698,
+          "pitch": -0.4531
+        },
+        {
+          "nodeId": "spalna",
+          "yaw": 2.7133,
+          "pitch": -0.1598
+        }
+      ]
+    },
+    {
+      "id": "kupelna",
+      "name": "Kúpeľňa",
+      "panorama": "kupelna.jpg",
+      "links": [
+        {
+          "nodeId": "predsien",
+          "yaw": 6.1732,
+          "pitch": -0.6119
+        }
+      ]
+    },
+    {
+      "id": "spalna",
+      "name": "Spálňa",
+      "panorama": "spalna.jpg",
+      "links": [
+        {
+          "nodeId": "obyvacka",
+          "yaw": 0.1011,
+          "pitch": -0.3427
+        }
+      ]
+    }
+  ]
+}
